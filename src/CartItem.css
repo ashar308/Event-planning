@@ -1,0 +1,20 @@
+.items{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+.items div{
+    width: 25%;
+}
+.items button{
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    margin: 0 10px;
+    border: None;
+
+}
+.items button:disabled{
+    background-color: #f8f9fa;
+    padding-bottom: 1em;
+}

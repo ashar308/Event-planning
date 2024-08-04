@@ -1,0 +1,100 @@
+.nav-bar{
+   width: 100%;
+   height: 100px;
+   background-color: #121619;
+   display: flex;
+   flex-direction: row;
+   
+}
+.nav-bar .firsthalf{
+   flex: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   padding-left: 150px;
+   
+}
+.nav-bar .firsthalf img{
+    width: 110px;
+}
+.nav-bar .second-half{
+    flex: 50%;
+    height: 100px;
+    display: flex;
+    
+}
+.nav-bar a{
+   color: white;
+   Text-decoration: None;
+   margin: 20px;
+}
+.nav-bar .second-half button {
+   background-color: transparent;
+   border: none;
+   color: blue;
+   cursor: pointer;
+   font-size: 50px;
+}
+.nav-bar .second-half svg {
+   font-size: 50px;
+}
+
+.nav-bar #open {
+   padding-left: 0px;
+}
+.nav-bar #open img {
+   display: none;
+}
+
+.nav-bar #close img {
+   display: inherit;
+}
+
+.nav-bar #open .hiddenLinks {
+   display: inherit;
+   margin-left: 30px;
+}
+
+.nav-bar #close .hiddenLinks {
+   display: none;
+}
+
+.nav-bar #open a {
+   width: 70px;
+   margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+   .nav-bar .firsthalf a {
+      width: 70px;
+      
+   }
+  .nav-bar .second-half {
+      padding-left: 50px;
+   }
+}
+@media only screen and (max-width: 600px) {
+   .nav-bar .second-half a {
+      display: none;
+   }
+
+  .nav-bar .second-half {
+      justify-content: flex-end;
+      padding-right: 50px;
+   }
+
+  .nav-bar .second-half button {
+      display: inherit;
+   }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+   .nav-bar .second-half button {
+      display: none;
+   }
+
+  .hiddenLinks {
+      display: none;
+   }
+}
